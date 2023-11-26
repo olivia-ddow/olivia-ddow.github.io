@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Olivia Crépin - Multimedia Engineer</title>
+  <meta name="title" content="Olivia Crépin - Multimedia Engineer">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/pp.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="80" height="80" alt="Pfolio home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Resume</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Olivia Crépin</h1>
+
+            <p class="hero-subtitle">
+              Student in Multimedia Engineering
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/pp.jpg" width="800" height="800" alt="kane williams" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hi, I’m Olivia Crépin and I'm a future multimedia engineer. Passionated by art and technologies, I want to share my vision of the world by creating captivating products.
+            </p>
+
+            <a href="./assets/pdf/CREPIN_CV.pdf" target="_blank" class="btn has-before">
+              <span class="span">Download my CV</span>
+
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="portfolio" aria-labelledby="portfolio-label">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="portfolio-label">My projects</p>
+
+            <h2 class="h2 section-title">Portfolio</h2>
+          </div>
+
+        </div>
+
+        <div class="slider" data-slider>
+
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/boids.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Paperplane Boids Simulation</h3>
+
+                  <p class="card-text">made in C++ and OpenGl</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://mega.nz/file/1BlwCTZD#j42_6642HFkrg-n0VJPL1iMWhQm73tqLnnV-FpE-po4" target="_blank">See Live</a></button>
+                    <button><a href="https://github.com/Just-Kiel/IMAC-Prog-S4" target="_blank">Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/meshroom.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Meshroom Geolocation</h3>
+
+                  <p class="card-text">Creation of a module in Python, to get</p> 
+                  <p class="card-text">geolocation information for Meshroom sofware</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://alicevision.org/#meshroom" target="_blank.">See Live</a></button>
+                    <button><a href="https://github.com/alicevision/MeshroomGeolocation" target="_blank.">Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/p21.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">P-21 Generative Art Project</h3>
+
+                  <p class="card-text">Made with p5.js library</p>
+                  <p class="card-text">Reproduction of <em>P-21</em> by Mohr with variations</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://editor.p5js.org/Matraellix/sketches/IU2MkxX-L" target="_blank.">See Live & Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/yams.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Yam'sématiques</h3>
+
+                  <p class="card-text">Yahtzee game made in Python</p>
+                  <p class="card-text">Different probability distributions are implemented for the dice rolls</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://mega.nz/file/VF0lzKbb#TgBj96b--hcszrbjHyh3y1bOiVpvzB_Z67E1h8JAz4A" target="_blank.">See Live</a></button>
+                    <button><a href="https://github.com/matraellix/yamsematique" target="_blank.">Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/tts.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Through The Seasons</h3>
+
+                  <p class="card-text">Platform game in C++ and OpenGL</p>
+                  <p class="card-text">inspired by the game <em>Thomas Was Alone</em></p>
+
+                  <div class ="sources-butt">
+                    <button><a href="" target="_blank.">See Live</a></button>
+                    <button><a href="https://github.com/olivia-ddow/Through_The_Seasons/" target="_blank.">Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/pokimac.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Pokimac</h3>
+
+                  <p class="card-text">Pokemon game like made in C++</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://mega.nz/file/wUkAWapT#GO1N3JJdP-Vo8cXow4sN_Qu8ncz0LYfNhqnlLu4HUls" target="_blank.">See Live</a></button>
+                    <button><a href="https://github.com/olivia-ddow/Pokimac/" target="_blank.">Source Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/radiocourchevel.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Radio Courchevel</h3>
+
+                  <p class="card-text">Webdesign and Website Development for Grands Espaces</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://www.radiocourchevel.com/radio-courchevel/" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/altus-magazines.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Altus Magazines</h3>
+
+                  <p class="card-text">Webdesign and Front-end Development for Grands Espaces</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://altus-magazines.com/" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/cgm.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">CGM communication</h3>
+
+                  <p class="card-text">Website Development for CGM communication</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://www.cgm-communication.com/" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/a_mi_chemin.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">À mi-chemin vers l'avenir</h3>
+
+                  <p class="card-text">Short movie made with Premiere Pro and After Effects</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://youtu.be/udwske1JKa8?si=a_DSKOQpYCgOlSJB" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/3d_anim.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">3D Animation</h3>
+
+                  <p class="card-text">Made with Blender</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://mega.nz/file/0AlXjIbD#PF9S71TwlKI_OVx9wkoG7ouMQtuiolq7wbYCZXFyLEM" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/ladybug.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">The Tales of Ladybug and Cat Noir Lyrics Video</h3>
+
+                  <p class="card-text">Made with After Effects</p>
+
+                  <div class ="sources-butt">
+                    <button><a href="https://www.youtube.com/watch?v=ErSfZeFCxkY" target="_blank">See Live</a></button>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+      </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in touch</p>
+        </li>
+
+        <li>
+          <a href="mailto:oliviacre.pro@gmail.com" class="footer-link">oliviacre.pro@gmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+        <li>
+          <a href="https://github.com/olivia-ddow" target="_blank" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="copyright">
+      <p>© 2022 - Template by Sadee</p>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
